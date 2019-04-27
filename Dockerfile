@@ -235,7 +235,18 @@ RUN set -ex \
 
 # runtime stage
 FROM scratch
- 
+
+
+ARG BUILD_VERSION=1.9.1
+
+LABEL maintainer="Jean-Michel DILLY <docker@dillydally.fr>"
+LABEL org.label-schema.schema-version="1.0"
+LABEL org.label-schema.name="jmdilly/unbound"
+LABEL org.label-schema.description="Docker most lightweight and minimalist image of Unbound"
+LABEL org.label-schema.url="https://github.com/jmdilly/docker-unbound"
+LABEL org.label-schema.version=$BUILD_VERSION
+LABEL org.label-schema.docker.cmd="docker run -p 53:53/tcp -p 53:53/udp -d jmdilly/unbound"
+
 COPY --from=distroless /root/distroless/finalimage/ /
 # Set correct owner for /var/lib/* and /usr/share/unbound/
 COPY --from=distroless --chown=1001:1001 /root/distroless/finalimage/var/lib/ /var/lib/
