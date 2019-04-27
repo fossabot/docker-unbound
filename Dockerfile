@@ -236,11 +236,13 @@ RUN set -ex \
 # runtime stage
 FROM scratch
 
-
+ARG BUILD_DATE
+ARG VCS_REF
 ARG BUILD_VERSION=1.9.1
 
 LABEL maintainer="Jean-Michel DILLY <docker@dillydally.fr>"
 LABEL org.label-schema.schema-version="1.0"
+LABEL org.label-schema.build-date=$BUILD_DATE
 LABEL org.label-schema.name="jmdilly/unbound"
 LABEL org.label-schema.description="Docker most lightweight and minimalist image of Unbound"
 LABEL org.label-schema.url="https://github.com/jmdilly/docker-unbound"
