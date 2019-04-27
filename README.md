@@ -1,4 +1,4 @@
-# Docker most lightweight and minimal image of Unbound
+# Docker most lightweight and minimalist image of Unbound
 
 WARNING : this image is very experimental. Use at your own risk!
 
