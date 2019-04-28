@@ -2,6 +2,7 @@
 
 WARNING : this image is very experimental. Use at your own risk!
 
+[![Version](https://images.microbadger.com/badges/version/jmdilly/unbound.svg)](https://github.com/jmdilly/docker-unbound/)
 [![Docker Pulls](https://img.shields.io/docker/pulls/jmdilly/unbound.svg)](https://github.com/jmdilly/docker-unbound/)
 [![Docker image size](https://images.microbadger.com/badges/image/jmdilly/unbound.svg)](https://github.com/jmdilly/docker-unbound/)
 
