@@ -5,6 +5,7 @@ WARNING : this image is very experimental. Use at your own risk!
 [![Version](https://images.microbadger.com/badges/version/jmdilly/unbound.svg)](https://github.com/jmdilly/docker-unbound/)
 [![Docker Pulls](https://img.shields.io/docker/pulls/jmdilly/unbound.svg)](https://github.com/jmdilly/docker-unbound/)
 [![Docker image size](https://images.microbadger.com/badges/image/jmdilly/unbound.svg)](https://github.com/jmdilly/docker-unbound/)
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fjmdilly%2Fdocker-unbound.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fjmdilly%2Fdocker-unbound?ref=badge_shield)
 
 
 ## What is this ?
@@ -18,3 +19,7 @@ The minimalist Linux image is generated with [distroless Google's tools](https:/
 
 * Unbound-control default certificates are currently generated during Docker image building. It is strongly advised to generated your own certs on per container basis.
 
+
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fjmdilly%2Fdocker-unbound.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fjmdilly%2Fdocker-unbound?ref=badge_large)
