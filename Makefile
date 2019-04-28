@@ -31,7 +31,7 @@ endif
 docker_build:
 	# Build Docker image
 	docker build \
-		--build-arg UNBOUND_VERSION=$(CODE_VERSION) \	
+		--build-arg UNBOUND_VERSION=$(CODE_VERSION) \
 		--build-arg BUILD_DATE=`date -u +"%Y-%m-%dT%H:%M:%SZ"` \
 		--build-arg BUILD_VERSION=$(CODE_VERSION) \
 		--build-arg VCS_URL="https://github.com/jmdilly/docker-unbound/" \
