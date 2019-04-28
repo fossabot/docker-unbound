@@ -31,11 +31,12 @@ endif
 docker_build:
 	# Build Docker image
 	docker build \
-  --build-arg BUILD_DATE=`date -u +"%Y-%m-%dT%H:%M:%SZ"` \
-  --build-arg BUILD_VERSION=$(CODE_VERSION) \
-  --build-arg VCS_URL="https://github.com/jmdilly/docker-unbound/" \
-  --build-arg VCS_REF=$(GIT_COMMIT) \
-	-t $(DOCKER_IMAGE):$(DOCKER_TAG) .
+		--build-arg UNBOUND_VERSION=$(CODE_VERSION) \	
+		--build-arg BUILD_DATE=`date -u +"%Y-%m-%dT%H:%M:%SZ"` \
+		--build-arg BUILD_VERSION=$(CODE_VERSION) \
+		--build-arg VCS_URL="https://github.com/jmdilly/docker-unbound/" \
+		--build-arg VCS_REF=$(GIT_COMMIT) \
+		-t $(DOCKER_IMAGE):$(DOCKER_TAG) .
 
 .PHONY: docker_push
 docker_push:

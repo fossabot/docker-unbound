@@ -1,6 +1,10 @@
-# Docker most lightweight and minimalist image of Unbound
+# Docker lightweight and minimalist image of Unbound
 
 WARNING : this image is very experimental. Use at your own risk!
+
+[![Docker Pulls](https://img.shields.io/docker/pulls/jmdilly/unbound.svg)](https://github.com/jmdilly/docker-unbound/)
+[![Docker image size](https://images.microbadger.com/badges/image/jmdilly/unbound.svg)](https://github.com/jmdilly/docker-unbound/)
+
 
 ## What is this ?
 
